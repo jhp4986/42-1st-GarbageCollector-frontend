@@ -5,11 +5,17 @@ const ProductCategory = () => {
   return (
     <div>
       <header className="product-header">
-        <h2 className="product-h2">
-          {CATEGORY_TITLE[0].title}
-          <sup>{CATEGORY_TITLE[0].subTitle}</sup>
-        </h2>
-        <p className="product-p">{CATEGORY_TITLE[0].text}</p>
+{CATEGORY_TITLE.map((categoryTitle)=>{
+  return(
+    // <h2 className="product-h2">
+    //       {CATEGORY_TITLE[0].title}
+    //       <sup>{CATEGORY_TITLE[0].subTitle}</sup>
+    //     </h2>
+    //     <p className="product-p">{CATEGORY_TITLE[0].text}</p>
+  )
+})}
+        
+        
       </header>
     </div>
   );

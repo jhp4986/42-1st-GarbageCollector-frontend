@@ -91,7 +91,7 @@ const Login = () => {
         </div>
         <span className="checkbox-wrap">
           <input type="checkbox" className="save-id" />
-          <label for="save-id">아이디 저장</label>
+          <label>아이디 저장</label>
         </span>
         <button className="btn-login" disabled={!isValid}>
           로그인

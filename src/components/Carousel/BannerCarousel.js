@@ -50,7 +50,7 @@ const BannerCarousel = () => {
   }, [currentIndex, slideList.length]);
 
   const onClickBtnIndex = e => {
-    setCurrentIndex(Number(e.target.innerText));
+    setCurrentIndex(Number(e.target.innerText) + 1);
   };
 
   const onClickBtnArrow = e => {
@@ -87,16 +87,19 @@ const BannerCarousel = () => {
       <button className="next-button" onClick={onClickBtnArrow}>
         <img className="next" alt=">" src="images/main_arr_next.png" />
       </button>
-      <button className="index-button" onClick={onClickBtnIndex}>
-        {dataFromServer.map(data => (
-          <span
+      {/* <button className="index-button"> */}
+      <div className="index-button-cnt">
+        {dataFromServer.map((data, idx) => (
+          <button
+            onClick={onClickBtnIndex}
             key={data.productId}
             className={currentIndex === data.productId ? 'active' : ''}
           >
-            {data.productId}
-          </span>
+            {idx}
+          </button>
         ))}
-      </button>
+      </div>
+      {/* </button> */}
     </div>
   );
 };

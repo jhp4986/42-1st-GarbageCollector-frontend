@@ -35,7 +35,7 @@ const NavRightWrap = ({ navrighticon }) => {
   return (
     <li className="nav-right">
       <button onClick={goToSearch} className="nav-search-icon">
-        <img className="navSearchIcon" src={searchIcon} alt={searchAlt} />
+        <img className="nav-search-icon" src={searchIcon} alt={searchAlt} />
       </button>
       <img
         onClick={goToCart}
@@ -47,7 +47,7 @@ const NavRightWrap = ({ navrighticon }) => {
       <div onClick={goToLogin} className="nav-login">
         <span className="navLogInFont">로그인</span>
       </div>
-      <button onClick={showMoreInfo} className="moreInfoBtn">
+      <button onClick={showMoreInfo} className="more-info-btn">
         <img className="more-info-icon" src={moreInfoIcon} alt={moreIncoAlt} />
       </button>
       {asideOpen && <NavAside showMoreInfo={showMoreInfo} />}

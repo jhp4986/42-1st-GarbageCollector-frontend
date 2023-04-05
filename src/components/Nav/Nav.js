@@ -56,11 +56,16 @@ const NAV_CATEGORIES = [
   },
   {
     id: 2,
-    name: '인기',
+    name: '인기상품',
   },
   {
     id: 3,
-    name: '신상',
+    name: '신상품',
+  },
+  ,
+  {
+    id: 4,
+    name: '콜라보레이션',
   },
 ];
 
